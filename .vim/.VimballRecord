@@ -1,0 +1,2 @@
+delimitMate-2.6.vba: call delete('/Users/dnatoli/.vim/plugin/delimitMate.vim')|call delete('/Users/dnatoli/.vim/autoload/delimitMate.vim')|call delete('/Users/dnatoli/.vim/doc/delimitMate.txt')
+supertab.vba: call delete('/Users/dnatoli/.vim/doc/supertab.txt')|call delete('/Users/dnatoli/.vim/plugin/supertab.vim')
