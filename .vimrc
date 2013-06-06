@@ -34,6 +34,9 @@ set showcmd
 "Show line numbers
 set number
 
+"Allow mouse
+set mouse=a
+
 "Indent
 set smartindent
 set autoindent
@@ -51,6 +54,9 @@ set smartcase
 "Show matching brackets when text indicator is over them
 set showmatch
 
+" Show trailing spaces
+set list listchars=tab:»·,trail:·
+
 "Clear search highlighting
 map <leader>' :let @/ = ""<CR>
 
@@ -67,3 +73,4 @@ let NERDTreeShowHidden=1
 map <leader>F :FufFile<CR>
 map <leader>f :FufCoverageFile<CR>
 map <leader>s :FufTag<CR>
+map <leader>r :FufRenewCache<CR>
