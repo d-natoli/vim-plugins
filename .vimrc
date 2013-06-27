@@ -34,9 +34,6 @@ set showcmd
 "Show line numbers
 set number
 
-"Allow mouse
-set mouse=a
-
 "Indent
 set smartindent
 set autoindent
@@ -74,3 +71,11 @@ map <leader>F :FufFile<CR>
 map <leader>f :FufCoverageFile<CR>
 map <leader>s :FufTag<CR>
 map <leader>r :FufRenewCache<CR>
+
+" visible active buffers
+hi StatusLine cterm=NONE ctermbg=darkgreen ctermfg=black gui=bold guibg=green guifg=black
+hi StatusLineNC cterm=NONE ctermbg=black ctermfg=lightgray gui=bold guibg=black guifg=lightgray
+
+
+" format entire file (going back to the original cursor location)
+map <Leader>fef ggVG=``
