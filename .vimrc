@@ -67,6 +67,8 @@ map <C-e> :NERDTreeToggle<cr>
 let NERDTreeShowHidden=1
 
 "CtrlP
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
 map <leader>f :CtrlP<CR>
 
 " visible active buffers
