@@ -55,13 +55,14 @@ set showmatch
 set list listchars=tab:»·,trail:·
 
 "Clear search highlighting
-map <leader>' :let @/ = ""<CR>
+nmap <leader>' :let @/ = ""<CR>
 
 "Pathogen
 call pathogen#infect()
 
 "NERDTREE
-map <C-e> :NERDTreeToggle<cr>
+nmap <C-e> :NERDTreeToggle<cr>
+nmap <leader>g :NERDTreeFind<CR>
 
 "Show hidden files in NerdTree
 let NERDTreeShowHidden=1
@@ -69,11 +70,11 @@ let NERDTreeShowHidden=1
 "CtrlP
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
-map <leader>f :CtrlP<CR>
+nmap <leader>f :CtrlP<CR>
 
 " visible active buffers
 hi StatusLine cterm=NONE ctermbg=darkgreen ctermfg=black gui=bold guibg=green guifg=black
 hi StatusLineNC cterm=NONE ctermbg=black ctermfg=lightgray gui=bold guibg=black guifg=lightgray
 
 " format entire file (going back to the original cursor location)
-map <Leader>fef ggVG=``
+nmap <Leader>fef ggVG=``
