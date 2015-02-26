@@ -78,3 +78,6 @@ hi StatusLineNC cterm=NONE ctermbg=darkgray ctermfg=lightgray gui=bold guibg=bla
 
 " format entire file (going back to the original cursor location)
 nmap <Leader>fef ggVG=``
+
+" Toggle relative line numbers
+nnoremap <silent><leader>n :set relativenumber!<cr>
