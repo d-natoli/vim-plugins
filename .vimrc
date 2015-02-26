@@ -74,7 +74,7 @@ nmap <leader>f :CtrlP<CR>
 
 " visible active buffers
 hi StatusLine cterm=NONE ctermbg=darkgreen ctermfg=black gui=bold guibg=green guifg=black
-hi StatusLineNC cterm=NONE ctermbg=black ctermfg=lightgray gui=bold guibg=black guifg=lightgray
+hi StatusLineNC cterm=NONE ctermbg=darkgray ctermfg=lightgray gui=bold guibg=black guifg=lightgray
 
 " format entire file (going back to the original cursor location)
 nmap <Leader>fef ggVG=``
