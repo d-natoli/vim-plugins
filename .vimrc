@@ -58,7 +58,7 @@ set list listchars=tab:»·,trail:·
 nmap <leader>' :let @/ = ""<CR>
 
 "Pathogen
-call pathogen#infect()
+execute pathogen#infect()
 
 "NERDTREE
 nmap <C-e> :NERDTreeToggle<cr>
