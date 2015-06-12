@@ -18,6 +18,10 @@ colorscheme vibrantink
 "Fast saving
 map <leader>w :w!<CR>
 
+"Fast closing
+map <leader>b :bd<CR>
+map <leader>B :bufdo bd<CR>
+
 "Tab stuff
 set tabstop=2
 set shiftwidth=2
@@ -57,6 +61,18 @@ set list listchars=tab:»·,trail:·
 "Clear search highlighting
 nmap <leader>' :let @/ = ""<CR>
 
+" Toggle between paste mode
+nnoremap <silent> <Leader>p :set paste!<cr>
+
+" Close all splits except current
+nnoremap <Leader>o :only<cr>
+
+" _ : Quick horizontal splits
+nnoremap _ :sp<cr>
+
+" | : Quick vertical splits
+nnoremap <bar> :vsp<cr>
+
 "Pathogen
 execute pathogen#infect()
 
@@ -81,3 +97,9 @@ nmap <Leader>fef ggVG=``
 
 " Toggle relative line numbers
 nnoremap <silent><leader>n :set relativenumber!<cr>
+
+" Go to end of line in insert mode
+inoremap <c-e> <esc>A
+
+" Go to beginning of line in insert mode
+inoremap <c-a> <esc>I
