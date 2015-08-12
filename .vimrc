@@ -62,7 +62,7 @@ set list listchars=tab:»·,trail:·
 nmap <leader>' :let @/ = ""<CR>
 
 " Toggle between paste mode
-nnoremap <silent> <Leader>p :set paste!<cr>
+nnoremap <Leader>p :set paste!<cr>
 
 " Close all splits except current
 nnoremap <Leader>o :only<cr>
