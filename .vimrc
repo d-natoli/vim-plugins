@@ -37,6 +37,10 @@ set showcmd
 
 "Show line numbers
 set number
+"Toggle show line numbers
+nnoremap <Leader>N :set nu!<cr>
+"Toggle relative line numbers
+nnoremap <silent><leader>n :set relativenumber!<cr>
 
 "Indent
 set smartindent
@@ -55,16 +59,16 @@ set smartcase
 "Show matching brackets when text indicator is over them
 set showmatch
 
-" Show trailing spaces
+"Show trailing spaces
 set list listchars=tab:»·,trail:·
 
 "Clear search highlighting
 nmap <leader>' :let @/ = ""<CR>
 
-" Toggle between paste mode
+"Toggle between paste mode
 nnoremap <Leader>p :set paste!<cr>
 
-" Close all splits except current
+"Close all splits except current
 nnoremap <Leader>o :only<cr>
 
 " _ : Quick horizontal splits
@@ -88,18 +92,15 @@ let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
 nmap <leader>f :CtrlP<CR>
 
-" visible active buffers
+"visible active buffers
 hi StatusLine cterm=NONE ctermbg=darkgreen ctermfg=black gui=bold guibg=green guifg=black
 hi StatusLineNC cterm=NONE ctermbg=darkgray ctermfg=lightgray gui=bold guibg=black guifg=lightgray
 
-" format entire file (going back to the original cursor location)
+"format entire file (going back to the original cursor location)
 nmap <Leader>fef ggVG=``
 
-" Toggle relative line numbers
-nnoremap <silent><leader>n :set relativenumber!<cr>
-
-" Go to end of line in insert mode
+"Go to end of line in insert mode
 inoremap <c-e> <esc>A
 
-" Go to beginning of line in insert mode
+"Go to beginning of line in insert mode
 inoremap <c-a> <esc>I
