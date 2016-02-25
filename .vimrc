@@ -91,6 +91,10 @@ let NERDTreeShowHidden=1
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
 nmap <leader>f :CtrlP<CR>
+"Use ag for indexing
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 "visible active buffers
 hi StatusLine cterm=NONE ctermbg=darkgreen ctermfg=black gui=bold guibg=green guifg=black
