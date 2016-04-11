@@ -57,7 +57,12 @@
 [submodule ".vim/bundle/ZoomWin"]
   path = .vim/bundle/ZoomWin
   url = git@github.com:vim-scripts/ZoomWin.git
+  branch = master
 [submodule ".vim/bundle/vim-multiple-cursors"]
-	path = .vim/bundle/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
-	branch = master
+  path = .vim/bundle/vim-multiple-cursors
+  url = git@github.com:terryma/vim-multiple-cursors.git
+  branch = master
+[submodule ".vim/bundle/ag.vim"]
+  path = .vim/bundle/ag.vim
+  url = git@github.com:rking/ag.vim.git
+  branch = master
