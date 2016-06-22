@@ -66,3 +66,6 @@
   path = .vim/bundle/ag.vim
   url = git@github.com:rking/ag.vim.git
   branch = master
+[submodule ".vim/bundle/vim-elixir"]
+	path = .vim/bundle/vim-elixir
+	url = git@github.com:elixir-lang/vim-elixir.git
