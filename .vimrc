@@ -108,3 +108,6 @@ inoremap <c-e> <esc>A
 
 "Go to beginning of line in insert mode
 inoremap <c-a> <esc>I
+
+" Don't exit multiple cursors when escaping out of insert mode
+let g:multi_cursor_exit_from_insert_mode = 0
