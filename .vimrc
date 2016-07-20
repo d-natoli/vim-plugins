@@ -34,6 +34,7 @@ map <leader>- :tabclose<CR>
 
 "Show command in bottom right portion of the screen
 set showcmd
+set ruler
 
 "Show line numbers
 set number
