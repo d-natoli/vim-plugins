@@ -36,6 +36,9 @@ map <leader>- :tabclose<CR>
 set showcmd
 set ruler
 
+" Disable folding
+set nofoldenable
+
 "Show line numbers
 set number
 "Toggle show line numbers
