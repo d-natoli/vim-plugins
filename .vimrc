@@ -115,3 +115,9 @@ inoremap <c-a> <esc>I
 
 " Don't exit multiple cursors when escaping out of insert mode
 let g:multi_cursor_exit_from_insert_mode = 0
+
+" Support Flow types
+let g:javascript_plugin_flow = 1
+
+" Support .js files with vim-jsx
+let g:jsx_ext_required = 0
