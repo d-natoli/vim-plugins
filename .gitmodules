@@ -81,3 +81,6 @@
 [submodule ".vim/bundle/vim-json"]
 	path = .vim/bundle/vim-json
 	url = git@github.com:leshill/vim-json.git
+[submodule ".vim/bundle/ctrlp-py-matcher"]
+	path = .vim/bundle/ctrlp-py-matcher
+	url = git://github.com/FelikZ/ctrlp-py-matcher
