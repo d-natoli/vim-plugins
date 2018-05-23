@@ -65,6 +65,7 @@ set showmatch
 
 "Show trailing spaces
 set list listchars=tab:»·,trail:·
+nmap <leader>l :set list!<cr>
 
 "Clear search highlighting
 nmap <leader>' :let @/ = ""<CR>
