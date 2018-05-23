@@ -84,3 +84,6 @@
 [submodule ".vim/bundle/ctrlp-py-matcher"]
 	path = .vim/bundle/ctrlp-py-matcher
 	url = git://github.com/FelikZ/ctrlp-py-matcher
+[submodule ".vim/bundle/vim-yaml"]
+	path = .vim/bundle/vim-yaml
+	url = git@github.com:stephpy/vim-yaml.git
