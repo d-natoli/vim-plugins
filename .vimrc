@@ -9,6 +9,39 @@ filetype indent on
 "Set to auto read when a file is changed from the outside
 set autoread
 
+" Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-cucumber'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'ervandew/supertab'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'rking/ag.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'jamessan/vim-gnupg'
+Plugin 'pangloss/vim-javascript'
+Plugin 'leshill/vim-json'
+Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'stephpy/vim-yaml'
+Plugin 'fatih/vim-go'
+Plugin 'HerringtonDarkholme/yats'
+Plugin 'jparise/vim-graphql'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-rails'
+Plugin 'mileszs/ack.vim'
+
+call vundle#end()
+
 "Colors
 syntax on
 set t_Co=256
@@ -82,41 +115,6 @@ nnoremap _ :sp<cr>
 " | : Quick vertical splits
 nnoremap <bar> :vsp<cr>
 
-" Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-cucumber'
-Plugin 'vim-scripts/matchit.zip'
-Plugin 'ervandew/supertab'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-scripts/ZoomWin'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'rking/ag.vim'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'jamessan/vim-gnupg'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'leshill/vim-json'
-Plugin 'FelikZ/ctrlp-py-matcher'
-Plugin 'stephpy/vim-yaml'
-Plugin 'fatih/vim-go'
-Plugin 'jparise/vim-graphql'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'peitalin/vim-jsx-typescript'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Raimondi/delimitMate'
-Plugin 'tpope/vim-rails'
-Plugin 'mileszs/ack.vim'
-call vundle#end()
-
-
 "NERDTREE
 nmap <C-e> :NERDTreeToggle<cr>
 nmap <leader>g :NERDTreeFind<CR>
@@ -153,8 +151,6 @@ let g:multi_cursor_exit_from_insert_mode = 0
 " Support Flow types
 let g:javascript_plugin_flow = 1
 
-" Support .js files with vim-jsx
-let g:jsx_ext_required = 0
-
 " set filetypes as typescript.tsx
-autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+autocmd BufNewFile,BufRead *.tsx,*.jsx,*.ts set filetype=typescript.tsx
+autocmd BufNewFile,BufRead *.graphql,*.gql set filetype=graphql
