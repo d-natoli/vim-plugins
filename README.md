@@ -6,10 +6,8 @@ A collection of plugins for vim &amp; my .vimrc
 ln -s ~/src/vim-plugins/.vimrc ~/.vimrc
 ln -s ~/src/vim-plugins/.vim ~/.vim
 
-cd ~/src/vim-plugins
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# sync plugins
-git submodule init
-git submodule sync
-git submodule update --recursive
+# open vim
+:PluginInstall
 ```
