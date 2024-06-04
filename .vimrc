@@ -37,6 +37,8 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-cucumber'
+Plugin 'hashivim/vim-terraform'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 
@@ -76,6 +78,11 @@ set number
 nnoremap <Leader>N :set nu!<cr>
 "Toggle relative line numbers
 nnoremap <silent><leader>n :set relativenumber!<cr>
+
+"Show status bar on single file
+set laststatus=2
+" Hide -- INSERT --
+set noshowmode
 
 "Indent
 set smartindent
